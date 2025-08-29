@@ -157,9 +157,12 @@ def update_user(data, id):
     for user in data["users"]:
         if(user["id"]) == id:
             # print(user["orders"])
-            dummy_order = {"order_id": 105, "item": "Keyboard", "price": 40000},
+            dummy_order = {"order_id": 105, "item": "Keyboard", "price": 40000}
             # user["username"] = "Hell"
             user["orders"].append(dummy_order)
-    print(data["users"])
+    print(data)
+    with open("json-files/data.json", "w") as f:
+        json.dump(data, f, indent=4)
+
 
 update_user(data, 2)

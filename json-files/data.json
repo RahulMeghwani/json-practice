@@ -13,8 +13,16 @@
                 }
             },
             "orders": [
-                {"order_id": 101, "item": "Laptop", "price": 55000},
-                {"order_id": 102, "item": "Mouse", "price": 700}
+                {
+                    "order_id": 101,
+                    "item": "Laptop",
+                    "price": 55000
+                },
+                {
+                    "order_id": 102,
+                    "item": "Mouse",
+                    "price": 700
+                }
             ]
         },
         {
@@ -30,9 +38,21 @@
                 }
             },
             "orders": [
-                {"order_id": 103, "item": "Phone", "price": 20000},
-                {"order_id": 104, "item": "Mouse", "price": 700}
-
+                {
+                    "order_id": 103,
+                    "item": "Phone",
+                    "price": 20000
+                },
+                {
+                    "order_id": 104,
+                    "item": "Mouse",
+                    "price": 700
+                },
+                {
+                    "order_id": 105,
+                    "item": "Keyboard",
+                    "price": 40000
+                }
             ]
         }
     ]
