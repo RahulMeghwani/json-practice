@@ -48,7 +48,6 @@ def check_user():
             return jsonify("There is no such user")
         if new_password != user["password"]:
             return jsonify("password is incorrect")
-        if 
             
         
 
