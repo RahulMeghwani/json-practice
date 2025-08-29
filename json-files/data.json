@@ -54,6 +54,27 @@
                     "price": 40000
                 }
             ]
+        },
+        {
+            "id": 3,
+            "username": "Rahul",
+            "password": "Rahul@123",
+            "details": [],
+            "orders": []
+        },
+        {
+            "id": 4,
+            "username": "Rahul",
+            "password": "Rahul@123",
+            "details": {
+                "email": " ",
+                "age": 0,
+                "address": {
+                    "city": " ",
+                    "state": ""
+                }
+            },
+            "orders": []
         }
     ]
 }
