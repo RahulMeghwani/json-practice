@@ -47,20 +47,24 @@ def check_user():
     new_password = request.json["password"]
     found = False
     username_found = False
-    password_correct = False
+    #password_correct = False
     for user in data["users"]:
         if (new_username == user["username"]):
             username_found = True
             if (new_password == user["password"]):
-                password_correct = True
+                return jsonify("username and password is correct")
+            else:
+                return jsonify("Password is incorrect")
         # if (new_username == user["username"]) and (new_password == user["password"]):
         #     found = True
-    if not username_found and not password_correct:
-        return jsonify("Username and password is incorrect")
+    #if not username_found and not password_correct:
+    if not username_found:
+        #return jsonify("Username and password is incorrect")
+        return jsonify("Username is incorrect")
     if not username_found:
         return jsonify("Username is incorrect")
-    if not password_correct:
-        return jsonify("password is incorrect")
+    #if not password_correct:
+        #return jsonify("password is incorrect")
     # if not found:
     #     return jsonify("username and password is incorrect")
     
